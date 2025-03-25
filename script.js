@@ -17,7 +17,7 @@ document.getElementById('meal-form').addEventListener('submit', async function (
   formData.append('description', description);
 
   try {
-    const res = await fetch('https://calorie-estimator-backend-zjtk.onrender.com', {
+    const res = await fetch('https://calorie-estimator-backend.onrender.com/analyze', {
       method: 'POST',
       body: formData
     });
@@ -29,4 +29,9 @@ document.getElementById('meal-form').addEventListener('submit', async function (
     } else {
       alert("⚠️ No result returned.");
     }
+
+  } catch (err) {
+    console.error("🚫 Error during fetch:", err);
+    alert("Something went wrong. Please try again.");
   }
+});
