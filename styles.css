@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Upload Box Styling */
+.upload-box {
+  background-color: #676a59;
+  color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 40px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.upload-box input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Description Box */
+.description-box {
+  width: 400px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: #b4a393;
+  color: white;
+  text-align: center;
+}
+
+.description-box::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #676a59;
+  color: white;
+  padding: 12px 30px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5a5c4f;
+}
